@@ -1,22 +1,15 @@
 package com.java8;
 
 
-interface A {
-		public static void print() {
-			System.out.println("Checking...");
-		}
-	}
+public class Check {
 	
-public class Check implements A {
-			
-	public static void main (String args[])
-	{	
-		A.print();
-		Check c = new Check();
-		c.print();
-	}
+	public String getArray() {
+	    return "MK";
+	  }
+	  public static Object getObject() {
+	    return new String("Dhoni");
+	  }
+	
 
-	public void print() {
-	System.out.println("Call in main method");
-	}
+
 }
