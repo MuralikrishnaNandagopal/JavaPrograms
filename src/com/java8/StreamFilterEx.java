@@ -26,8 +26,7 @@ public class StreamFilterEx {
 
 		productsList.stream().filter(p -> p.price > 30000).map(pm -> pm.price).forEach(System.out::println);
 
-		productsList.stream().filter(product -> product.price > 25000)
-				.forEach(product -> System.out.println(product.name));
+		productsList.stream().filter(product -> product.price > 25000).forEach(product -> System.out.println(product.name));
 
 	}
 }

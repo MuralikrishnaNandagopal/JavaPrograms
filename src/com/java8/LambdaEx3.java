@@ -5,7 +5,7 @@ interface Addable{
     int add(int a,int b);  
 }  
   
-public class LambdaExp{  
+public class LambdaEx3{  
     public static void main(String[] args) {  
           
         // Multiple parameters in lambda expression  
