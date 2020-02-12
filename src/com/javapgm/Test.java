@@ -1,18 +1,52 @@
 package com.javapgm;
 
-import com.java8.Check;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Result {
+
+    /*
+     * Complete the 'fizzBuzz' function below.
+     *
+     * The function accepts INTEGER n as parameter.
+     */
+
+    public static void fizzBuzz(int n) {
+    
+    	for (int i=1; i<=n; i++)
+    	{
+    	    if (i%3 == 0 && i%5 == 0) {
+    	    	System.out.println("FizzBuzz");
+        	}
+    		else if (i%3 == 0) {
+    			System.out.println("Fizz");
+    		}
+    		else if (i%5 == 0) {
+    			System.out.println("Buzz");
+    		}
+    		else {
+    			System.out.println(i);
+    		}
+    	}
+    }
+
+}
 
 public class Test {
-	
-	public static void main (String args[]) {
+    public static void main(String[] args) throws IOException {
+    	System.out.println("starting");
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-	Object result1 = Check.getObject(); 
-	System.out.println(result1);
-	
-	
-    Check provider = new Check();
-    String result2 = provider.getArray();
-	System.out.println(result2);
+        int n = Integer.parseInt(bufferedReader.readLine().trim());
+        Result.fizzBuzz(n);
 
-	}
+        bufferedReader.close();
+    }
 }

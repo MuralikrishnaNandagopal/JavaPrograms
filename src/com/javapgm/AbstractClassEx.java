@@ -38,13 +38,13 @@ public class AbstractClassEx {
 		Bank b;
 	
 		b = new SBI();
-		System.out.println("Rate of Interest in SBI is: " + b.getRateOfInterest() + " %");
-		System.out.println("Checking Non Abstract Method : " + b.print()); 
-		System.out.println("Checking Non Abstract Method : " + Bank.checker()); 
+		System.out.println("SBI_Rate of Interest is: " + b.getRateOfInterest() + " %");
+		System.out.println("SBI_Checking Non Abstract Method : " + b.print()); 
+		System.out.println("SBI_Checking Abstract Method : " + Bank.checker()); 
 
 		
 		b = new PNB();
-		System.out.println("Rate of Interest in PNB is: " + b.getRateOfInterest() + " %");
-		System.out.println("Checking Non Abstract Method : " + b.print()); 
+		System.out.println("PNB_Rate of Interest is: " + b.getRateOfInterest() + " %");
+		System.out.println("PNB_Checking Non Abstract Method : " + b.print()); 
 	}
 }

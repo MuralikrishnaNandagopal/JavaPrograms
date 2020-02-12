@@ -15,16 +15,14 @@ public static void main(String args[])
      list.add("Ajay");   
      list.add("");
      
-     
      System.out.println("Printing Entire List -> " + list);  
-
      System.out.println("Printing Entire List as Array -> " + list.toArray()[1]);  
      
      
      Iterator itr=list.iterator();  
      
      while(itr.hasNext()){  
-      System.out.println("Printing Entire List as Iterator -> " + itr.next());  
+    	 System.out.println("Printing Entire List as Iterator -> " + itr.next());  
      }  
  }  
 }  
